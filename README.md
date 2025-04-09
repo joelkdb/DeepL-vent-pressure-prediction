@@ -48,7 +48,7 @@ Ce projet est réalisé par des étudiants de l'UTBM:
 
 ```bash
 # Cloner le repository
-git clone https://github.com/votre-utilisateur/deepl-vent-pressure-prediction.git
+git clone https://github.com/joelkdb/DeepL-vent-pressure-prediction
 cd deepl-vent-pressure-prediction-ai
 
 
