@@ -26,7 +26,6 @@ class InsightsGenerator:
         - Les données représentent des séries temporelles de respiration artificielle avec 80 pas de temps par cycle respiratoire.
         - Variables principales: u_in (débit d'entrée), pressure (pression à prédire), R (résistance) et C (compliance).
         - Chaque cycle respiratoire a une phase d'inspiration (u_in > 0) suivie d'une phase d'expiration (u_in = 0).
-        - u_out : voir la variation des données après suppression
 
         ## Relations et comportements physiques
         1. **Impact de R et C sur la pression**:
@@ -47,13 +46,10 @@ class InsightsGenerator:
         - Les paramètres de t-SNE et UMAP sont en cours d'amélioration pour obtenir une stabilité
 
         2. **Stratégies de modélisation recommandées**:
+        - Préparer les data loader
         - Réseaux de neurones récurrents (LSTM/GRU) pour capturer les dépendances temporelles.
         - Modèles basés sur les transformers pour modéliser les séquences complètes.
         - Features d'ingénierie incluant: u_in cumulatif, dérivées de pression, statistiques glissantes.
-        
-        
-        !! A voir avec le métier, si on peut ou pas supprimer des données 
-        !! Préparer les data loader =>
         """
 
         # Enregistrer les insights dans un fichier

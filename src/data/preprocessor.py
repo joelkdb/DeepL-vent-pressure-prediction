@@ -120,8 +120,7 @@ class VentilatorDataPreprocessor:
             result_df.loc[mask, 'pressure_delta'] = subset['pressure'].diff().fillna(0)
             
             # Dérivée seconde (accélération)
-            if 'pressure_delta' in subset.columns:
-                result_df.loc[mask, 'pressure_delta2'] = subset['pressure_delta'].diff().fillna(0)
+            result_df.loc[mask, 'pressure_delta2'] = result_df['pressure_delta'].diff().fillna(0)
             
             # Cumul de u_in pour estimer le volume total d'air insufflé au fil du temps
             result_df.loc[mask, 'u_in_cumsum'] = subset['u_in'].cumsum()

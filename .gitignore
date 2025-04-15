@@ -12,3 +12,5 @@ test_*.ipynb
 # Environnements virtuels
 venv/
 .env
+
+/output/
