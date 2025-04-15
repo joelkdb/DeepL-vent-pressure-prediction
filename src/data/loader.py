@@ -26,10 +26,9 @@ class VentilatorDataLoader:
             tuple: (train_df, test_df, submission_df)
         """
         
-        print("4")
-        # Télécharger si on n'est pas dans l'environnement Kaggle
+        # Télécharger les données
         self._download_data()
-        print("5")
+
         # Charger les données téléchargées
         train_df = pd.read_csv(os.path.join(self.data_dir, 'train.csv'))
         test_df = pd.read_csv(os.path.join(self.data_dir, 'test.csv'))
