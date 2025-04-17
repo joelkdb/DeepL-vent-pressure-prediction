@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Kaggle](https://img.shields.io/badge/Kaggle-Google%20Brain%20Challenge-20BEFF.svg)](https://www.kaggle.com/c/ventilator-pressure-prediction)
 
-Un projet d'apprentissage profond pour la prédiction de pression ventilatoire en soins intensifs, basé sur le jeu de données "Google Brain - Ventilator Pressure Prediction".
+Un projet d'apprentissage profond pour la prédiction de pression ventilatoire en soins intensifs, basé sur le jeu de données "Google Brain - Ventilator Pressure Prediction" https://research.google/blog/machine-learning-for-mechanical-ventilation-control/
 
 ## 📋 À propos du projet
 
