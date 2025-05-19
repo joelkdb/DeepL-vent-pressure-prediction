@@ -127,6 +127,30 @@ class VentilatorDataPreprocessor:
         
         return result_df
     
+    def create_ventilator_features(self, df):
+        """
+            Crée des caractéristiques supplémentaires pour la prédiction
+        Args:
+            df (_type_): DataFrame contenant la données brutes
+        """
+        df_new = df.copy()
+        
+        # Taux de changement -> différence consécutive
+        df_new['pressure_delta'] = df_new.grouby('breath_id')['pressure'].diff().fillna(0)
+    
+        # Calcul du temps écoulé depuis le début du cycle de respiration
+        df_new['time_step_percent'] = df_new['time_step'] / df_new.groupby('breath_id')['time_step'].transform('max')
+        
+        # Caractéristiques de la dynamique de respiration
+        df_new['u_in_cumsum'] = df_new.groupby('breath_id')['u_in'].cumsum()
+        df_new['u_in_diff'] = df_new.groupby('breath_id')['u_in'].diff().fillna(0)
+        
+        # Caractéristiques d'interaction
+        df_new['u_in_times_R'] = df_new['u_in'] * df_new['R']
+        df_new['u_in_times_C'] = df_new['u_in'] * df_new['C']
+        
+        return df_new
+    
     def aggregate_features(self, df):
         """
         Calcule des statistiques agrégées pour chaque cycle respiratoire
@@ -161,7 +185,7 @@ class VentilatorDataPreprocessor:
             'pressure': ['mean', 'std', 'min', 'max'],
             'pressure_delta': ['mean', 'std', 'min', 'max'],
             'pressure_delta2': ['mean', 'std', 'min', 'max'],
-            'u_in_cumsum': ['max'],  # Volume d'air total
+            'u_in_cumsum': ['max'],
             'R': 'first',
             'C': 'first'
         })
