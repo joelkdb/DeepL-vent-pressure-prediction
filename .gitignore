@@ -15,4 +15,4 @@ venv/
 
 /output/
 *.zip
-/notebooks/wandb/
+/notebooks/wandb/notebooks/data/ventilator-pressure-prediction.zip
