@@ -1,0 +1,35 @@
+{
+  "os": "macOS-10.16-x86_64-i386-64bit",
+  "python": "CPython 3.12.4",
+  "startedAt": "2025-06-13T07:28:43.904557Z",
+  "program": "/Users/joelkdb/Documents/Studies/UTBM/2024-2025/Primptemps 2025/DS50/deepL-vent-pressure-prediction/notebooks/all_in_one_work.ipynb",
+  "codePath": "notebooks/all_in_one_work.ipynb",
+  "git": {
+    "remote": "https://github.com/joelkdb/deepL-vent-pressure-prediction.git",
+    "commit": "5f4fd8d4318fc3369cdcfc4c0934a972353bce2a"
+  },
+  "email": "sokliboukadaba@gmail.com",
+  "root": "/Users/joelkdb/Documents/Studies/UTBM/2024-2025/Primptemps 2025/DS50/deepL-vent-pressure-prediction/notebooks",
+  "host": "Joels-MacBook-Pro.local",
+  "executable": "/opt/anaconda3/bin/python",
+  "codePathLocal": "all_in_one_work.ipynb",
+  "cpu_count": 8,
+  "cpu_count_logical": 16,
+  "disk": {
+    "/": {
+      "total": "1000240963584",
+      "used": "892580917248"
+    },
+    "/System/Volumes/Data": {
+      "total": "1000240963584",
+      "used": "892580917248"
+    }
+  },
+  "memory": {
+    "total": "17179869184"
+  },
+  "cpu": {
+    "count": 8,
+    "countLogical": 16
+  }
+}
