@@ -35,15 +35,6 @@ Nous explorons plusieurs architectures de deep learning, notamment :
 - **LSTM (Long Short-Term Memory)** : Pour les relations à long terme dans les séries temporelles
 - **Transformer** : Architecture basée sur l'attention pour une modélisation avancée
 
-## 👥 Équipe
-Ce projet est réalisé par des étudiants de l'UTBM:
-
-- [Membre 1]
-- Membre 2]
-- [Membre 3]
-- [Membre 4]
-- [Membre 5]
-
 ## 🚀 Installation et démarrage
 
 ```bash
